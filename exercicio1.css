@@ -82,3 +82,37 @@ footer{
 *{
     border: 1px solid black;
 }
+
+/* calculadora */
+
+.calc-body{
+ border: 1px solid black;
+ border-radius: 15px;
+ padding: 15px;
+width: 260px;
+background-color: #303030;
+}
+
+.input-count{
+    padding: 10px;
+    border-radius: 10px;
+    height: 25px;
+    background-color: green;
+    outline: none;
+    font-size: 28px;
+}
+
+.input-buttons {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    background-color: rgb(163, 139, 139);
+    color: #f0f0f0;
+    text-align: center;
+}
+
+.input-buttons:active{
+    background-color: darkslategray;
+    color: gray;
+}

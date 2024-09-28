@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="exercicio1.css" />
+</head>
+
+<body>
+    <div class="calc-body">
+        <div id="display" class="input-count" contenteditable="true" onfocus="this.blur()" spellcheck="false"></div>
+        <div style="justify-content: right; display: flex">
+            <select style="background-color: transparent; color: #f0f0f0; margin-right: 110px">
+                <option value="basic">Básica</option>
+                <option value="scientific">Científica</option>
+            </select>
+            <button
+            style="background-color: red; width: 30px; height: 30px; margin-right: 20px;"
+                class="input-buttons"
+                onclick="delChar()">del</button>
+        </div>
+        <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+            <button style="color: red;" class="input-buttons" onclick="clearDisplay()">C</button>
+            <button style="color: green;" class="input-buttons" onclick="addDisplay('(')">(</button>
+            <button style="color: green;" class="input-buttons" onclick="addDisplay(')')">)</button>
+            <button style="color: green;" class="input-buttons" onclick="addDisplay('/')">/</button>
+            <button class="input-buttons" onclick="addDisplay('7')">7</button>
+            <button class="input-buttons" onclick="addDisplay('8')">8</button>
+            <button class="input-buttons" onclick="addDisplay('9')">9</button>
+            <button style="color: green;" class="input-buttons" onclick="addDisplay('*')">x</button>
+            <button class="input-buttons" onclick="addDisplay('4')">4</button>
+            <button class="input-buttons" onclick="addDisplay('5')">5</button>
+            <button class="input-buttons" onclick="addDisplay('6')">6</button>
+            <button style="color: green;" class="input-buttons" onclick="addDisplay('-')">-</button>
+            <button class="input-buttons" onclick="addDisplay('1')">1</button>
+            <button class="input-buttons" onclick="addDisplay('2')">2</button>
+            <button class="input-buttons" onclick="addDisplay('3')">3</button>
+            <button style="color: green;" class="input-buttons" onclick="addDisplay('+')">+</button>
+            <button class="input-buttons" onclick="addDisplay('(-')">+/-</button>
+            <button class="input-buttons" onclick="addDisplay('0')">0</button>
+            <button class="input-buttons" onclick="addDisplay('.')">,</button>
+            <button style="background-color: green;" class="input-buttons" onclick="calcular()">=</button>
+        </div>
+    </div>
+    <script src="exercicio1.js"></script>
+</body>
+
+</html>
